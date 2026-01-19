@@ -2,8 +2,11 @@ import Link from "next/link";
 
 const nav = [
   { href: "/", label: "Home" },
+  { href: "/featured", label: "Featured" },
+  { href: "/experience", label: "Experience" },
   { href: "/projects", label: "Projects" },
 ];
+
 
 export function Header() {
   return (

@@ -9,7 +9,9 @@ export default function FeaturedPage() {
     <main>
       <Section
         title="Featured Projects"
-        description="총무 업무를 시스템으로 전환한 사례 중심으로 정리했습니다."
+        description="실무 경험을 일반화해, 특정 조직에 의존하지 않는
+‘지식 기반 시스템’으로 설계한 대표 프로젝트입니다.
+"
       >
         <div className="grid gap-4">
           {featured.map((p: any) => (
