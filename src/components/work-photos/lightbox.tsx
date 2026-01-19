@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useCallback, useState } from "react";
 import Image from "next/image";
-import type { WorkPhoto } from "@/app/lib/data/work-photos";
+import type { WorkPhoto } from "@/src/app/lib/data/work-photos";
 
 interface LightboxProps {
   photos: WorkPhoto[];
