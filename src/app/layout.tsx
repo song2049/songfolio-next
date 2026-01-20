@@ -8,12 +8,19 @@ export const metadata: Metadata = {
   description: "Simple portfolio built with Next.js",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+  modal,
+}: {
+  children: React.ReactNode;
+  modal: React.ReactNode;
+}) {
   return (
     <html lang="ko">
       <body className="min-h-screen">
         <Header />
         {children}
+        {modal}
         <Footer />
       </body>
     </html>

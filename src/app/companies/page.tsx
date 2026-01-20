@@ -1,52 +1,49 @@
+// src/app/companies/page.tsx
+
 import Link from "next/link";
-import { projects } from "../lib/data/projects";
 import { Section } from "../section";
 import { Container } from "../ui/container";
+import { companies } from "../lib/data/companies";
 
-type CompanyItem = { key: string; name: string; count: number };
+function Tag({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="inline-flex rounded-full border border-zinc-200 bg-white px-2 py-0.5 text-[11px] text-zinc-700">
+      {children}
+    </span>
+  );
+}
 
 export default function CompaniesPage() {
-  const map = new Map<string, CompanyItem>();
-
-  for (const p of projects as any[]) {
-    const key = p.company?.key as string | undefined;
-    const name = p.company?.name as string | undefined;
-    if (!key) continue;
-
-    const prev = map.get(key);
-    map.set(key, {
-      key,
-      name: name ?? key,
-      count: (prev?.count ?? 0) + 1,
-    });
-  }
-
-  const companies = Array.from(map.values()).sort((a, b) => a.key.localeCompare(b.key));
-
   return (
     <main>
-      <Section title="Companies" description="회사별 경험과 연결된 프로젝트를 한 번에 정리합니다.">
+      <Section title="Companies" description="회사별 경력(업무 내용)을 한 페이지로 정리했습니다.">
         <Container>
           <div className="grid gap-4 md:grid-cols-2">
             {companies.map((c) => (
               <Link
                 key={c.key}
-                href={`/companies/${c.key}`}
+                href={c.href}
                 className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm hover:bg-zinc-50"
               >
-                <div className="text-sm font-semibold text-zinc-900">{c.name}</div>
-                <div className="mt-2 text-sm text-zinc-600">
-                  Related projects: <span className="font-semibold text-zinc-900">{c.count}</span>
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <div className="text-sm font-semibold text-zinc-900">{c.name}</div>
+                    <div className="mt-1 text-xs text-zinc-600">
+                      {c.period} · {c.roleLine}
+                    </div>
+                  </div>
+                  <div className="text-xs text-zinc-500">View →</div>
                 </div>
-                <div className="mt-3 text-xs text-zinc-500">View company page →</div>
+
+                <p className="mt-3 text-sm text-zinc-700 leading-relaxed">{c.oneLiner}</p>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {c.tags.slice(0, 6).map((t) => (
+                    <Tag key={t}>{t}</Tag>
+                  ))}
+                </div>
               </Link>
             ))}
-
-            {companies.length === 0 ? (
-              <div className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-600">
-                연결된 회사 데이터가 아직 없습니다. projects.ts에 company를 추가해 주세요.
-              </div>
-            ) : null}
           </div>
 
           <div className="mt-10 flex flex-wrap gap-2">

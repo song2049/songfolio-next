@@ -126,7 +126,7 @@ export function ProjectDetail({
 
             {links ? (
               <div className="mt-4 flex flex-wrap gap-2">
-                {links.github ? <LinkButton href={links.github} label="GitHub" /> : null}
+                {links.github ? <LinkButton href={links.github} label="Site" /> : null}
                 {links.live ? <LinkButton href={links.live} label="Live" /> : null}
                 {links.docs ? <LinkButton href={links.docs} label="Docs" /> : null}
               </div>
@@ -190,8 +190,11 @@ export function ProjectDetail({
       <section className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
         <h2 className="text-sm font-semibold text-zinc-900">Related Experience</h2>
         <p className="mt-2 text-sm leading-relaxed text-zinc-600">
-          이 프로젝트는 실제 총무/운영 경험에서 나온 문제를 시스템 설계로 전환한 결과입니다.
-          아래 Experience 페이지에서 동일한 문제/업무 흐름의 근거를 확인할 수 있습니다.
+          이 프로젝트는 실제 업무 경험과 학습 과정에서 정리한 문제를 바탕으로,
+          운영 구조를 설계하고 구현해본 결과물입니다.
+
+          해당 문제의 배경과 업무 경험은
+          Experience 페이지에서 확인할 수 있습니다.
         </p>
 
         <div className="mt-4 flex flex-wrap gap-2">

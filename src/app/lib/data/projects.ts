@@ -84,7 +84,7 @@ export const projects: Project[] = [
       ],
     },
     links: {
-      github: "https://github.com/song2049",
+      github: "http://54.180.142.153/dashboard",
     },
   },
 
@@ -149,6 +149,7 @@ export const projects: Project[] = [
     ],
     cover: "/projects/tocheon/cover.png",
     featured: true,
+    company: { key: "kga", name: "경일게임IT아카데미" },
     outcomeLine:
       "기획 단계에서 정의한 사용자 흐름을 기준으로 API를 설계하고, 실제 서비스 수준의 인증·데이터 구조를 백엔드에서 구현했습니다.",
 
