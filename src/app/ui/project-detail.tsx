@@ -87,7 +87,15 @@ export function ProjectDetail({
   return (
     <div className="space-y-6">
       {/* Hero */}
+                  {links ? (
+              <div className="mt-4 flex flex-wrap gap-2">
+                {links.github ? <LinkButton href={links.github} label="GAS Site 보기" /> : null}
+                {links.live ? <LinkButton href={links.live} label="Live" /> : null}
+                {links.docs ? <LinkButton href={links.docs} label="Docs" /> : null}
+              </div>
+            ) : null}
       <header className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+        
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div className="space-y-2">
             <h1 className="text-xl font-semibold tracking-tight">{title}</h1>
@@ -124,13 +132,7 @@ export function ProjectDetail({
               ))}
             </div>
 
-            {links ? (
-              <div className="mt-4 flex flex-wrap gap-2">
-                {links.github ? <LinkButton href={links.github} label="Site" /> : null}
-                {links.live ? <LinkButton href={links.live} label="Live" /> : null}
-                {links.docs ? <LinkButton href={links.docs} label="Docs" /> : null}
-              </div>
-            ) : null}
+
           </div>
 
           {cover ? (

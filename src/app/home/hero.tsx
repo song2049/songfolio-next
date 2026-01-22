@@ -132,7 +132,7 @@ export function HomeHero() {
 
               <div className="flex flex-wrap gap-2 pt-1">
                 {/*  RBAC 기반 권한 설계 / Audit Log 기반 변경 이력 관리 /CSV Import 기반 자산·라이선스 대량 이관 / AWS EC2 + Nginx 운영 환경 구축*/}
-                {["RBAC", "Audit Log", "CSV Import", "AWS/Nginx"].map((t) => (
+                {["RBAC", "Audit Log", "CSV Import", "SaaS"].map((t) => (
                   <span
                     key={t}
                     className="rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[11px] text-white/70"

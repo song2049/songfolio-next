@@ -32,7 +32,7 @@ const credentials: Credential[] = [
 ];
 
 const skillGroups: SkillGroup[] = [
-  { title: "Frontend", items: ["Next.js", "React", "TypeScript", "JavaScript", "HTML", "CSS"] },
+  { title: "Frontend", items: ["Next.js", "React", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS"] },
   { title: "Backend", items: ["Node.js", "Express", "MySQL", "Prisma"] },
   { title: "Ops", items: ["AWS", "Nginx", "PM2"] },
   { title: "General Affairs", items: ["자산관리", "라이선스", "구매/계약", "벤더 관리", "임대 협상", "OA"] },
