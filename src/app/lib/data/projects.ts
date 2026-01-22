@@ -52,7 +52,7 @@ export const projects: Project[] = [
     ],
     cover: "/projects/gas/cover.png",
     featured: true,
-    company: { key: "vacorp", name: "VA Corporation" },
+    company: { key: "kga", name: "경일게임IT아카데미" },
     outcomeLine:
       "실무에서 겪은 관리·인수인계의 문제를 데이터 구조와 권한 흐름으로 풀어내, 바로 사용 가능한 수준의 자산 운영 시스템을 구축했습니다.",
     stats: [

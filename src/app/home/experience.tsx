@@ -11,7 +11,7 @@ type ExpCard = {
   cta?: { label: string; href: string };
 };
 
-const CARDS = [
+const CARDS: ExpCard[] = [
   {
     title: "운영을 ‘사람’에서 ‘구조’로 바꾸기",
     context: "자산·계정·라이선스 운영에서 반복되는 이슈를 시스템 구조로 고정",
@@ -31,6 +31,7 @@ const CARDS = [
       "운영 로그/권한 분리/업로드 흐름 표준화",
     ],
     result: [
+      "약 50종 라이선스·25개 벤더·2023년 2.5억 예산·갱신 예정 7천만 규모 운영을 구조로 표준화",
       "담당자 변경에도 운영 기준이 유지되는 구조 확보",
       "감사/정산/인수인계 근거(로그·상태·주기) 축적",
       "운영 업무를 재현 가능한 프로세스로 전환",
@@ -70,24 +71,46 @@ export function ExperienceSection() {
   return (
     <section className="bg-zinc-950">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between gap-6">
+        {/* Header + CTA (teaser 역할 흡수) */}
+        <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <h2 className="text-balance text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs text-white/70">
+              <span className="h-1.5 w-1.5 rounded-full bg-white/70" />
+              Experience
+            </div>
+            <h2 className="mt-4 text-balance text-2xl font-semibold tracking-tight text-white sm:text-3xl">
               Experience
             </h2>
-            <p className="mt-2 text-sm text-white/65">
-              문제 → 판단 → 구조 → 결과로 정리했습니다.
+            <p className="mt-2 max-w-xl text-sm text-white/65">
+              총무·IT 운영을 “사람 의존”에서 “구조 기반”으로 전환했습니다. 문제 → 판단 → 구조 → 결과 관점으로 정리했습니다.
             </p>
           </div>
 
-          <Link
-            href="/projects?mode=featured"
-            className="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:bg-white/10 hover:text-white sm:inline-flex"
-          >
-            전체 프로젝트
-          </Link>
+          <div className="flex gap-2">
+            <Link
+              href="/experience"
+              className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:bg-white/10 hover:text-white"
+            >
+              경력 상세 보기 →
+            </Link>
+
+            <Link
+              href="/companies"
+              className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:bg-white/10 hover:text-white"
+            >
+              회사별 보기 →
+            </Link>
+
+            <Link
+              href="/projects?mode=featured"
+              className="hidden rounded-full bg-emerald-400 px-4 py-2 text-sm font-medium text-zinc-950 transition hover:bg-emerald-300 sm:inline-flex"
+            >
+              전체 프로젝트 →
+            </Link>
+          </div>
         </div>
 
+        {/* Main card */}
         <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 shadow-[0_40px_120px_rgba(0,0,0,0.55)]">
           <div className="border-b border-white/10 px-6 py-5 sm:px-8">
             <div className="flex flex-wrap items-center gap-2">
@@ -107,7 +130,7 @@ export function ExperienceSection() {
           </div>
 
           {c.cta && (
-            <div className="flex items-center justify-between gap-4 border-t border-white/10 px-6 py-5 sm:px-8">
+            <div className="flex flex-col items-start justify-between gap-3 border-t border-white/10 px-6 py-5 sm:flex-row sm:items-center sm:px-8">
               <div className="text-xs text-white/55">
                 근거는 프로젝트 화면/로그/운영 플로우로 연결됩니다.
               </div>

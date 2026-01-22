@@ -46,13 +46,13 @@ export default function NHNCompanyPage() {
         description="대규모 IT 조직 환경에서 총무·IT 운영의 기본기를 체계적으로 쌓은 경험"
       >
         <Container>
-          <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
-            <div className="flex flex-wrap items-end justify-between gap-3">
+          <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-wrap items-start justify-between gap-4">
               <div>
-                <div className="text-sm font-semibold">Role</div>
-                <div className="mt-1 text-sm text-zinc-600">
+                <h2 className="text-lg font-semibold text-zinc-900">{companyName}</h2>
+                <p className="mt-1 text-sm text-zinc-600">
                   IT 총무 · 정규직 (2014.08–2017.01)
-                </div>
+                </p>
               </div>
 
               <div className="flex gap-2">
@@ -71,32 +71,33 @@ export default function NHNCompanyPage() {
               </div>
             </div>
 
+
             <div className="mt-6 grid gap-4 md:grid-cols-2">
               <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
                 <div className="mb-5">
                   <div className="text-sm font-semibold">Key Outcomes</div>
-                  <div className="mt-3 grid gap-3 md:grid-cols-3">
-                    <div className="rounded-2xl border border-zinc-200 bg-white p-4">
-                      <div className="text-xs font-semibold text-zinc-900">Scale</div>
-                      <div className="mt-1 text-lg font-semibold text-zinc-900">대규모 조직</div>
-                      <p className="mt-1 text-sm text-zinc-600">
-                        수백 명 단위 조직 환경에서 표준 IT 운영 경험
+                  <div className="mt-4 grid gap-3 md:grid-cols-3">
+<div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4 h-auto overflow-visible">
+  <div className="text-xs font-semibold text-zinc-500">Environment</div>
+  <div className="mt-1 text-sm font-semibold text-zinc-900">대규모 IT <br/>조직</div>
+  <p className="mt-1 text-xs text-zinc-600 break-words whitespace-normal">
+    수백 명 단위 조직 환경에서 전사 IT 운영 경험
+  </p>
+</div>
+
+                    <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
+                      <div className="text-xs font-semibold text-zinc-500">Operations</div>
+                      <div className="mt-1 text-sm font-semibold text-zinc-900">전사 IT 지원</div>
+                      <p className="mt-1 text-xs text-zinc-600">
+                        장비·계정·자산 조사 및 입·출고 운영
                       </p>
                     </div>
 
-                    <div className="rounded-2xl border border-zinc-200 bg-white p-4">
-                      <div className="text-xs font-semibold text-zinc-900">Operations</div>
-                      <div className="mt-1 text-lg font-semibold text-zinc-900">전사 IT 지원</div>
-                      <p className="mt-1 text-sm text-zinc-600">
-                        장비·계정·자산 조사 및 운영 지원
-                      </p>
-                    </div>
-
-                    <div className="rounded-2xl border border-zinc-200 bg-white p-4">
-                      <div className="text-xs font-semibold text-zinc-900">Process</div>
-                      <div className="mt-1 text-lg font-semibold text-zinc-900">운영 기본기</div>
-                      <p className="mt-1 text-sm text-zinc-600">
-                        입·퇴사 지급/회수, 장애 대응, 회선/네트워크 운영
+                    <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
+                      <div className="text-xs font-semibold text-zinc-500">Foundation</div>
+                      <div className="mt-1 text-sm font-semibold text-zinc-900">운영 기본기</div>
+                      <p className="mt-1 text-xs text-zinc-600">
+                        입·퇴사 프로세스, 장애 대응, 네트워크 지원
                       </p>
                     </div>
                   </div>
@@ -206,6 +207,6 @@ export default function NHNCompanyPage() {
           </div>
         </Container>
       </Section>
-    </main>
+    </main >
   );
 }

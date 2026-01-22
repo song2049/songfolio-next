@@ -176,14 +176,7 @@ export function ProjectDetail({
             className="block rounded-2xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm hover:bg-zinc-50"
           >
             ← Back to Projects
-          </Link>
-
-          <div className="rounded-2xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm">
-            <div className="font-medium text-zinc-900">Tip</div>
-            <p className="mt-2 leading-relaxed">
-              Results 섹션에 “전/후 비교”나 “수치(예: 시간 30% 단축)”가 들어가면 설득력이 확 올라가.
-            </p>
-          </div>
+          </Link>      
         </aside>
       </div>
       {/* Related Experience */}
@@ -191,50 +184,8 @@ export function ProjectDetail({
         <h2 className="text-sm font-semibold text-zinc-900">Related Experience</h2>
         <p className="mt-2 text-sm leading-relaxed text-zinc-600">
           이 프로젝트는 실제 업무 경험과 학습 과정에서 정리한 문제를 바탕으로,
-          운영 구조를 설계하고 구현해본 결과물입니다.
-
-          해당 문제의 배경과 업무 경험은
-          Experience 페이지에서 확인할 수 있습니다.
+          운영 구조를 설계하고 구현해본 결과물입니다.      
         </p>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Link
-            href="/experience"
-            className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm hover:bg-zinc-50"
-          >
-            Experience에서 근거 보기 →
-          </Link>
-
-          <Link
-            href="/featured"
-            className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm hover:bg-zinc-50"
-          >
-            Featured 목록으로 →
-          </Link>
-        </div>
-
-        <div className="mt-4 grid gap-3 md:grid-cols-3">
-          <div className="rounded-2xl border border-zinc-200 bg-white p-4">
-            <div className="text-sm font-semibold">운영 표준화</div>
-            <p className="mt-1 text-sm text-zinc-600">
-              구매 → 등록 → 지급/반납 → 폐기까지 흐름을 규칙화
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-zinc-200 bg-white p-4">
-            <div className="text-sm font-semibold">권한/통제</div>
-            <p className="mt-1 text-sm text-zinc-600">
-              RBAC 기반 메뉴/행동 분리 + 로그로 추적성 확보
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-zinc-200 bg-white p-4">
-            <div className="text-sm font-semibold">비용/갱신 관리</div>
-            <p className="mt-1 text-sm text-zinc-600">
-              라이선스 비용 최적화와 갱신 주기 관리 기반 마련
-            </p>
-          </div>
-        </div>
       </section>
 
     </div>

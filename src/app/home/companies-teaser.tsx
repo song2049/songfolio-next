@@ -57,7 +57,11 @@ export function CompaniesTeaser() {
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <h2 className="text-2xl font-semibold tracking-tight text-zinc-900">Companies</h2>
+            <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs text-zinc-700">
+              <span className="h-1.5 w-1.5 rounded-full bg-zinc-700" />
+              Companies
+            </div>
+            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-900">Companies</h2>
             <p className="mt-2 text-sm text-zinc-600">
               회사별 경력(업무 내용) 페이지로 바로 이동할 수 있습니다.
             </p>

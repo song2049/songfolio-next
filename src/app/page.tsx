@@ -3,10 +3,10 @@ import { HomeHero } from "./home/hero";
 import { ProblemSpace } from "./home/problem-space";
 import { FeaturedProjectsSection } from "./home/featured-projects";
 import { ProofSection } from "./home/proof";
-import { ExperienceTeaser } from "./home/experience-teaser";
 import { CompaniesTeaser } from "./home/companies-teaser";
 import { ProfileSection } from "./home/profile-section";
 import { Suspense } from "react";
+import { ExperienceSection } from "./home/experience";
 
 
 
@@ -20,9 +20,9 @@ export default function HomePage() {
 
       {/* White zone: 증명 → 근거 → 상세 유도 */}
       <CompaniesTeaser />
-      <FeaturedProjectsSection />
       <ProofSection />
-      <ExperienceTeaser />
+      <FeaturedProjectsSection />
+      <ExperienceSection/>
       <ProfileSection />
     </HomeClient>
     </Suspense>

@@ -36,7 +36,7 @@ export function IntroOverlay({
   }, [introDisabled, force]);
 
   const MAX_SHAKES = 3;
-const [shakeCount, setShakeCount] = useState(0);
+  const [shakeCount, setShakeCount] = useState(0);
 
   // 미세 흔들림 트리거
   const [shakeTick, setShakeTick] = useState(0);
@@ -47,10 +47,10 @@ const [shakeCount, setShakeCount] = useState(0);
 
   const steps: Step[] = useMemo(
     () => [
-      { text: "안녕하세요.", holdMs: 450 },
-      { text: "저는 송명진입니다.", holdMs: 650 },
-      { text: "총무 · IT · 자산 운영을 시스템으로 설계해왔습니다.", holdMs: 850 },
-      { text: "지금부터 제 포트폴리오를 보여드리겠습니다.", holdMs: 650 },
+      { text: "안녕하세요. 송명진입니다.", holdMs: 450 },
+      { text: "반복되던 총무 · IT · 자산 운영을 ", holdMs: 650 },
+      { text: "구조로 정리하고, 시스템으로 남겨왔습니다.", holdMs: 850 },
+      { text: "지금부터 그 과정을 공유합니다.", holdMs: 650 },
     ],
     []
   );
@@ -100,7 +100,7 @@ const [shakeCount, setShakeCount] = useState(0);
   function finish() {
     try {
       localStorage.setItem(STORAGE_KEY, "1");
-    } catch {}
+    } catch { }
     setOpen(false);
     onDone?.();
   }
@@ -158,17 +158,28 @@ const [shakeCount, setShakeCount] = useState(0);
                       text={line}
                       active={idx === visibleLines.length - 1 && !reduceMotion}
                       onImpact={() => {
-                      setShakeCount((c) => {
-                        if (c >= MAX_SHAKES) return c; // 제한
-                        setShakeTick((t) => t + 1);
-                        return c + 1;
-                    });
-                    }}
+                        setShakeCount((c) => {
+                          if (c >= MAX_SHAKES) return c; // 제한
+                          setShakeTick((t) => t + 1);
+                          return c + 1;
+                        });
+                      }}
                     />
                   ))}
                 </div>
               </div>
-
+            {/* (선택) 버튼 넣고 싶으면 여기 */}
+            <button  className="
+                  rounded-xl
+                  bg-zinc-900
+                  px-6 py-3
+                  text-sm font-medium text-white
+                  transition
+                  hover:bg-zinc-800 
+                  disabled:opacity-40
+                  disabled:pointer-events-none
+                "
+                onClick={finish} disabled={!canContinue}>포트폴리오 보기</button>
               {/* Bottom hints */}
               <div className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-xs text-white/55">
                 <span>
@@ -176,8 +187,7 @@ const [shakeCount, setShakeCount] = useState(0);
                 </span>
               </div>
 
-              {/* (선택) 버튼 넣고 싶으면 여기 */}
-              {/* <button onClick={finish} disabled={!canContinue}>포트폴리오 보기</button> */}
+              
             </motion.div>
           </div>
         </motion.div>

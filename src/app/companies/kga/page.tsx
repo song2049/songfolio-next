@@ -100,10 +100,6 @@ export default function KgaCompanyPage() {
             </div>
 
             <WorkCarousel photos={photos} maxPhotos={10} />
-
-            <p className="mt-2 text-xs text-zinc-600">
-              (옵션) public/images/work/kga/... 에 사진 넣고 work-photos.ts에만 등록하면 자동 표시됩니다.
-            </p>
           </div>
 
           {/* Evidence */}

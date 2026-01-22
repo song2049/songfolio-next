@@ -63,9 +63,15 @@ export function FeaturedProjectsSection() {
               }}
             />
 
-            <h2 className="relative text-2xl font-semibold tracking-tight text-zinc-900">
-              Featured Projects
-            </h2>
+            <div className="relative">
+              <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs text-zinc-700">
+                <span className="h-1.5 w-1.5 rounded-full bg-zinc-700" />
+                Featured Projects
+              </div>
+              <h2 className="relative mt-4 text-2xl font-semibold tracking-tight text-zinc-900">
+                Featured Projects
+              </h2>
+            </div>
             <p className="relative mt-2 text-sm text-zinc-600">
               결과물로 증명합니다. (로고/흐름/근거는 상세 페이지에서 확인)
             </p>

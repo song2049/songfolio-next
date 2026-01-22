@@ -40,7 +40,7 @@ export const companies: Company[] = [
     name: "VA Corporation",
     period: "경력 기간 입력",
     roleLine: "총무 · IT 자산/라이선스 운영",
-    oneLiner: "실무 중심 운영 고도화(자산/계정/라이선스/벤더) 경험을 시스템화(GAS)로 확장",
+    oneLiner: "자산·계정·라이선스·벤더 운영을 규모 기준으로 표준화하고, 데이터 기반 운영 체계로 정리",
     tags: ["자산관리", "라이선스", "벤더", "프로세스 표준화"],
     href: "/companies/vacorp",
   },
