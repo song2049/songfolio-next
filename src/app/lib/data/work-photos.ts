@@ -65,19 +65,26 @@ export const workPhotos: WorkPhoto[] = [
   {
     id: "vacorp-5",
     companyKey: "vacorp",
+    category: "inventory",
+    src: "/images/work/vacorp/inventory-05.jpg",
+    caption: "자산 실사: 취합 데이터",
+  },
+  {
+    id: "vacorp-6",
+    companyKey: "vacorp",
     category: "event",
     src: "/images/work/vacorp/event-01.jpg",
     caption: "자산 매각: 매각/폐기 절차에 따른 OS 초기화 및 부품 회수",
   },
   {
-    id: "vacorp-6",
+    id: "vacorp-7",
     companyKey: "vacorp",
     category: "event",
     src: "/images/work/vacorp/event-03.jpg",
     caption: "전사공지: 운영프로세스 변경 및 안내 사항 전파",
   },
   {
-    id: "vacorp-7",
+    id: "vacorp-8",
     companyKey: "vacorp",
     category: "event",
     src: "/images/work/vacorp/event-02.jpg",
