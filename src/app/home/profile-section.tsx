@@ -27,8 +27,8 @@ const credentials: Credential[] = [
   { name: "자동차운전면허 1종 보통", date: "2010.12" },
   { name: "4종 무인 드론(3과정)", date: "2025.02" },
   { name: "일반경비원", date: "2014.03" },
-  { name: "한국 911 수색 구조대", date: "2025.04", note: "기자 활동 포함(선택)" },
-  { name: "블록체인기반 웹 풀스택 개발자", date: "2025.08", note: "교육 과정 진행 중" },
+  { name: "한국 911 수색 구조대", date: "2025.04", note: "기자 활동 포함(오마이뉴스)" },
+  { name: "블록체인기반 웹 풀스택 개발자", date: "2025.08 ~ 2026.02", note: "교육 과정 종료" },
 ];
 
 const skillGroups: SkillGroup[] = [
