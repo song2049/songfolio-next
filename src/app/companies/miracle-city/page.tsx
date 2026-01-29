@@ -36,7 +36,7 @@ export default function MiracleCityCompanyPage() {
     <main>
       <Section
         title={companyName}
-        description="자산·소프트웨어 운영과 갱신 관리, 표준화 관점으로 운영 기반을 구축한 경험"
+        description="총무·시설·구매·IT 운영을 상주 형태로 지원하며, 반복 업무를 표준화 관점으로 정리해 운영 기반을 만든 경험"
       >
         <Container>
           {/* 상단 요약 카드 (기존 템플릿 유지 목적: 핵심 내용만 넣어둠) */}
@@ -45,7 +45,11 @@ export default function MiracleCityCompanyPage() {
               <div>
                 <div className="text-sm font-semibold">Role</div>
                 <div className="mt-1 text-sm text-zinc-600">
-                  총무/운영 · (기간은 실제 값으로 유지)
+                  총무/운영 · (2024.04 – 2025.03)
+                </div>
+                {/* ✅ 리스크 방지: 법인/조직을 굳이 노출하지 않되, 형태는 명확히 */}
+                <div className="mt-1 text-xs text-zinc-500">
+                  그룹 운영 프로젝트 형태로 상주하며 총무·시설·구매·IT 운영을 지원/전담
                 </div>
               </div>
 
@@ -71,6 +75,9 @@ export default function MiracleCityCompanyPage() {
                 <ul className="mt-3 space-y-2">
                   <Bullet>자산/장비 운영(재고, 지급·회수, 이력/현황 업데이트)</Bullet>
                   <Bullet>소프트웨어 구독/갱신 관리(만료/결제/증빙)</Bullet>
+                  <Bullet>시설/안전 운영(점검, 협력사 대응, 출입/공용설비 관리)</Bullet>
+                  <Bullet>구매/계약 운영(비교견적, 발주, 납기·정산 관리)</Bullet>
+                  <Bullet>사내·외 행사 운영 지원(기획안 검토, 실행 조율)</Bullet>
                   <Bullet>업무 표준화(요청 양식, 체크리스트, 운영 기준 정리)</Bullet>
                   <Bullet>협업 부서/업체 커뮤니케이션(일정/비용/납기)</Bullet>
                 </ul>
@@ -80,8 +87,8 @@ export default function MiracleCityCompanyPage() {
                 <div className="text-sm font-semibold">Why it matters</div>
                 <ul className="mt-3 space-y-2">
                   <Bullet>운영 데이터가 쌓여야 “인수인계/지속 운영”이 가능</Bullet>
+                  <Bullet>반복 업무를 표준화해 담당자 의존도를 낮춤</Bullet>
                   <Bullet>업무를 시스템으로 전환하기 위한 핵심 요구사항을 정의</Bullet>
-                  <Bullet>GAS/SpoonMate 스타일의 운영 시스템 설계에 연결</Bullet>
                 </ul>
               </div>
             </div>
@@ -109,7 +116,7 @@ export default function MiracleCityCompanyPage() {
           {/* Evidence */}
           <div className="mt-6">
             <div className="mb-3 text-sm font-semibold">Evidence</div>
-            <div className="grid gap-4 md:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-4">
               <EvidenceCard
                 title="자산/장비 운영"
                 points={[
@@ -132,6 +139,14 @@ export default function MiracleCityCompanyPage() {
                   "요청 양식/체크리스트 정리",
                   "반복 업무 템플릿화",
                   "운영 기준 공유로 담당자 의존도 감소",
+                ]}
+              />
+              <EvidenceCard
+                title="총무·시설·구매 운영"
+                points={[
+                  "법인차량/렌탈 계약 운영 및 정산",
+                  "시설 점검·AS 접수 및 협력사 커뮤니케이션",
+                  "비교견적 기반 발주/납기/정산 프로세스 운영",
                 ]}
               />
             </div>

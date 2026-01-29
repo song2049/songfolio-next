@@ -7,9 +7,6 @@ export function Footer() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-1">
             <div className="text-sm font-semibold">Songfolio</div>
-            <div className="text-sm text-zinc-600">
-              정적 데이터 기반으로, 유지보수 쉬운 포트폴리오를 만듭니다.
-            </div>
           </div>
 
           <div className="flex flex-wrap gap-2">

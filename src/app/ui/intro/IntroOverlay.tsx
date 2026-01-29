@@ -53,6 +53,7 @@ export function IntroOverlay({
       { text: "빛보다 구조로 정리해왔고,", holdMs: 650 },
       { text: "그 가치를 알아볼 준비가 된 분께", holdMs: 650 },
       { text: "이 포트폴리오를 공개합니다.", holdMs: 850 },
+      { text: "총무 · IT 운영을 시스템으로 설계해온 송명진입니다.", holdMs: 900 },
     ],
     []
   );

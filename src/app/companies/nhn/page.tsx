@@ -33,7 +33,7 @@ function EvidenceCard({
 
 export default function NHNCompanyPage() {
   const companyKey = "nhn";
-  const companyName = "NHN (Naver / NHN 계열)";
+  const companyName = "NHN (naver / NHN 계열)";
   const companyProjects = projects.filter((p: any) => p.company?.key === companyKey);
 
   // 사진 1장이어도 WorkCarousel은 동작함(센터만 보여줌)
@@ -51,7 +51,7 @@ export default function NHNCompanyPage() {
               <div>
                 <h2 className="text-lg font-semibold text-zinc-900">{companyName}</h2>
                 <p className="mt-1 text-sm text-zinc-600">
-                  IT 총무 · 정규직 (2014.08–2017.01)
+                  IT 총무업무지원팀 · 정규직 (2014.08–2017.01)
                 </p>
               </div>
 
@@ -77,13 +77,13 @@ export default function NHNCompanyPage() {
                 <div className="mb-5">
                   <div className="text-sm font-semibold">Key Outcomes</div>
                   <div className="mt-4 grid gap-3 md:grid-cols-3">
-<div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4 h-auto overflow-visible">
-  <div className="text-xs font-semibold text-zinc-500">Environment</div>
-  <div className="mt-1 text-sm font-semibold text-zinc-900">대규모 IT <br/>조직</div>
-  <p className="mt-1 text-xs text-zinc-600 break-words whitespace-normal">
-    수백 명 단위 조직 환경에서 전사 IT 운영 경험
-  </p>
-</div>
+                  <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4 h-auto overflow-visible">
+                    <div className="text-xs font-semibold text-zinc-500">Environment</div>
+                    <div className="mt-1 text-sm font-semibold text-zinc-900">대규모 IT <br/>조직</div>
+                    <p className="mt-1 text-xs text-zinc-600 break-words whitespace-normal">
+                      수백 명 단위 조직 환경에서 전사 IT 운영 경험
+                    </p>
+                  </div>
 
                     <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
                       <div className="text-xs font-semibold text-zinc-500">Operations</div>

@@ -45,7 +45,7 @@ export default function JeongmuCompanyPage() {
               <div>
                 <div className="text-sm font-semibold">Role</div>
                 <div className="mt-1 text-sm text-zinc-600">
-                  총무/관리 · (기간은 실제 값으로 유지)
+                  인사총무 · (2017.07 – 2020.07)
                 </div>
               </div>
 
