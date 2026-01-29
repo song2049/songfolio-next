@@ -47,10 +47,12 @@ export function IntroOverlay({
 
   const steps: Step[] = useMemo(
     () => [
-      { text: "안녕하세요. 송명진입니다.", holdMs: 450 },
-      { text: "반복되던 총무 · IT · 자산 운영을 ", holdMs: 650 },
-      { text: "구조로 정리하고, 시스템으로 남겨왔습니다.", holdMs: 850 },
-      { text: "지금부터 그 과정을 공유합니다.", holdMs: 650 },
+      { text: "광활한 우주에서", holdMs: 450 },
+      { text: "모든 별이 반짝일 필요는 없습니다.", holdMs: 650 },
+      { text: "저는 반복되던 총무 · IT · 자산 운영을", holdMs: 650 },
+      { text: "빛보다 구조로 정리해왔고,", holdMs: 650 },
+      { text: "그 가치를 알아볼 준비가 된 분께", holdMs: 650 },
+      { text: "이 포트폴리오를 공개합니다.", holdMs: 850 },
     ],
     []
   );

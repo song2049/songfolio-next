@@ -7,7 +7,7 @@ import { CompaniesTeaser } from "./home/companies-teaser";
 import { ProfileSection } from "./home/profile-section";
 import { Suspense } from "react";
 import { ExperienceSection } from "./home/experience";
-
+import { BeforeYouAsk } from "./home/before-you-ask";
 
 
 export default function HomePage() {
@@ -21,6 +21,7 @@ export default function HomePage() {
       {/* White zone: 증명 → 근거 → 상세 유도 */}
       <CompaniesTeaser />
       <ProofSection />
+      <BeforeYouAsk />   {/* 여기 */}
       <FeaturedProjectsSection />
       <ExperienceSection/>
       <ProfileSection />
