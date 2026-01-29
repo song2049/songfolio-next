@@ -33,8 +33,11 @@ export function BeforeYouAsk() {
           <div className="mb-10">
             <h2 className="text-2xl font-bold text-zinc-900">Before You Ask</h2>
             <p className="mt-3 text-sm text-zinc-600">
-              이 섹션에서는 제가 어떤 기준으로 업무를 바라보고, 어떤 방식으로
-              일해왔는지를 Q&A 형식으로 정리했습니다.
+            저는 지원 전에 회사의 사업과 구조, 제가 기여할 수 있는 역할을 먼저 봅니다.
+            순간적인 말재주보다는 업무의 구조를 만들고 결과로 증명하는 방식에 익숙하며,
+            면접 역시 실제 업무 상황을 기준으로 대화를 나누고 싶습니다.
+
+            아래 Q&A는 그 기준을 정리한 내용입니다.
             </p>
           </div>
 
