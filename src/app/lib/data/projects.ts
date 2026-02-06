@@ -85,7 +85,9 @@ export const projects: Project[] = [
     },
     links: {
       github: "http://54.180.142.153/dashboard",
+      live: "https://gas-v2.vercel.app/",
     },
+
   },
 
   {

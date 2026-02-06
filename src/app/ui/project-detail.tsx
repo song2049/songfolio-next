@@ -89,8 +89,8 @@ export function ProjectDetail({
       {/* Hero */}
                   {links ? (
               <div className="mt-4 flex flex-wrap gap-2">
-                {links.github ? <LinkButton href={links.github} label="GAS Site 보기" /> : null}
-                {links.live ? <LinkButton href={links.live} label="Live" /> : null}
+                {links.github ? <LinkButton href={links.github} label="GAS V1 Site 보기" /> : null}
+                {links.live ? <LinkButton href={links.live} label="GAS V2 Site 보기" /> : null}
                 {links.docs ? <LinkButton href={links.docs} label="Docs" /> : null}
               </div>
             ) : null}
