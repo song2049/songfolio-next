@@ -38,7 +38,7 @@ export const companies: Company[] = [
   {
     key: "vacorp",
     name: "VA Corporation",
-    period: "경력 기간 입력",
+    period: "2022.09-2024.03",
     roleLine: "총무 · IT 자산/라이선스 운영",
     oneLiner: "자산·계정·라이선스·벤더 운영을 규모 기준으로 표준화하고, 데이터 기반 운영 체계로 정리",
     tags: ["자산관리", "라이선스", "벤더", "프로세스 표준화"],
@@ -46,8 +46,8 @@ export const companies: Company[] = [
   },
   {
     key: "miracle-city",
-    name: "Miracle City",
-    period: "경력 기간 입력",
+    name: "Miracle City × Jellyfish",
+    period: "2024.04-2025.03",
     roleLine: "총무 · 운영 지원",
     oneLiner: "현장 운영·행사·시설/비품 관리 등 운영 업무를 구조화해 재사용 가능한 흐름으로 정리",
     tags: ["현장 운영", "시설/비품", "행사", "협력사 커뮤니케이션"],
@@ -56,7 +56,7 @@ export const companies: Company[] = [
   {
     key: "jeongmu",
     name: "Jeongmu",
-    period: "경력 기간 입력",
+    period: "2017.07-2020.07",
     roleLine: "총무 · 운영",
     oneLiner: "업무 운영을 문서/체크리스트/자산 흐름으로 정리해 인수인계 가능한 상태로 유지",
     tags: ["운영 프로세스", "문서화", "자산/비품", "인수인계"],
@@ -65,7 +65,7 @@ export const companies: Company[] = [
   {
     key: "kga",
     name: "경일게임IT아카데미 (KGA)",
-    period: "교육/프로젝트 기간 입력",
+    period: "2025.08-2025.02",
     roleLine: "교육 · 프로젝트 수행",
     oneLiner: "개발 기반 포트폴리오 구축과 프로젝트 수행 경험을 실무형 결과물로 정리",
     tags: ["Next.js", "프로젝트", "학습/구현", "포트폴리오"],

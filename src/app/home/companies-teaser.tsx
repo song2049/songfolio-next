@@ -19,7 +19,7 @@ const companies: Company[] = [
   },
   {
     key: "miracle-city",
-    name: "Miracle City",
+    name: "Miracle City × Jellyfish",
     period: "2024–2025",
     role: "총무 · 운영 관리",
     oneLiner: "현장 운영, 시설·비품 관리, 협력사 대응 등 실무 운영 전반을 담당",

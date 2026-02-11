@@ -38,7 +38,7 @@ const CASES: CompanyCase[] = [
   ],
  },
   {
-    company: "Miracle City World Group",
+    company: "Miracle City × Jellyfish",
     period: "2024.04 – 2025.03",
     role: "General Affairs / 시설·구매·운영",
     outcome:
