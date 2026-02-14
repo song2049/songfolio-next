@@ -18,9 +18,9 @@ const companies: Company[] = [
     oneLiner: "Next.js 기반 프로젝트 수행과 포트폴리오 구축을 통해 실무 중심 개발 역량을 정리",
   },
   {
-    key: "miracle-city",
-    name: "Miracle City × Jellyfish",
-    period: "2024–2025",
+    key: "jellyfish",
+    name: "Jellyfish Entertainment",
+    period: "2024–2024",
     role: "총무 · 운영 관리",
     oneLiner: "현장 운영, 시설·비품 관리, 협력사 대응 등 실무 운영 전반을 담당",
   },

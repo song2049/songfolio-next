@@ -38,8 +38,8 @@ const CASES: CompanyCase[] = [
   ],
  },
   {
-    company: "Miracle City × Jellyfish",
-    period: "2024.04 – 2025.03",
+    company: "Jellyfish",
+    period: "2024.04 – 2024.08",
     role: "General Affairs / 시설·구매·운영",
     outcome:
       "외주 의존도 감소 및 구매 구조 개선으로 운영 비용 절감 + 관리 범위 확장",

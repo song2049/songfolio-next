@@ -10,8 +10,8 @@ type CareerCard = {
 
 const CAREERS: CareerCard[] = [
   {
-    company: "Miracle City World Group",
-    period: "2024.04 – 2025.03",
+    company: "Jellyfish Entertainment",
+    period: "2024.04 – 2024.08",
     role: "General Affairs",
     outcome:
       "외주 의존도 감소 및 구매 구조 개선으로 운영 비용 절감 + 시설/출입/법정관리 운영.",

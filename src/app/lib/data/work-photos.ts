@@ -1,4 +1,4 @@
-export type CompanyKey = "miracle-city" | "jeongmu" | "vacorp" | "nhn" | "kga";
+export type CompanyKey = "miracle-city" | "jeongmu" | "vacorp" | "nhn" | "kga"| "jellyfish";
 
 export type WorkCategory = "inventory" | "move" | "setup" | "event" | "facility";
 
@@ -100,64 +100,64 @@ export const workPhotos: WorkPhoto[] = [
 
   // Miracle City (예시)
   {
-    id: "miracle-1",
-    companyKey: "miracle-city",
+    id: "jellyfish-1",
+    companyKey: "jellyfish",
     category: "event",
     src: "/images/work/miracle/event-01.jpg",
     caption: "행사 운영: 그늘막 설치 및 행사 장소 셋팅",
   },
     {
-    id: "miracle-2",
-    companyKey: "miracle-city",
+    id: "jellyfish-2",
+    companyKey: "jellyfish",
     category: "event",
     src: "/images/work/miracle/event-02.jpg",
     caption: "행사 운영: 사내 공간 활용하여 자리 셋팅",
   },
     {
-    id: "miracle-3",
-    companyKey: "miracle-city",
+    id: "jellyfish-3",
+    companyKey: "jellyfish",
     category: "event",
     src: "/images/work/miracle/event-03.jpg",
     caption: "행사 운영: 외부 업체 섭외(핫도그)",
   },
   {
-    id: "miracle-4",
-    companyKey: "miracle-city",
+    id: "jellyfish-4",
+    companyKey: "jellyfish",
     category: "event",
     src: "/images/work/miracle/event-04.jpg",
     caption: "행사 운영: 공간 활용 및 컨셉에 맞는 드럼통 배치",
   },
   {
-    id: "miracle-5",
-    companyKey: "miracle-city",
+    id: "jellyfish-5",
+    companyKey: "jellyfish",
     category: "event",
     src: "/images/work/miracle/event-05.jpg",
     caption: "행사 운영: 핑거 푸드 운영",
   },
   {
-    id: "miracle-6",
-    companyKey: "miracle-city",
+    id: "jellyfish-6",
+    companyKey: "jellyfish",
     category: "event",
     src: "/images/work/miracle/event-06.jpg",
     caption: "행사 운영: 사옥 이전 기념 행사 진행 준비",
   },
   {
-    id: "miracle-7",
-    companyKey: "miracle-city",
+    id: "jellyfish-7",
+    companyKey: "jellyfish",
     category: "facility",
     src: "/images/work/miracle/facility-01.jpg",
     caption: "시설관리: 외부 유리창 크랙(파손)으로 교체 작업 진행",
   },
   {
-    id: "miracle-8",
-    companyKey: "miracle-city",
+    id: "jellyfish-8",
+    companyKey: "jellyfish",
     category: "facility",
     src: "/images/work/miracle/facility-02.jpg",
     caption: "시설관리: 외부 유리창 크랙(파손)으로 교체 작업 진행",
   },
   {
-    id: "miracle-9",
-    companyKey: "miracle-city",
+    id: "jellyfish-9",
+    companyKey: "jellyfish",
     category: "facility",
     src: "/images/work/miracle/facility-03.jpg",
     caption: "시설관리: 외부 유리창 크랙(파손)으로 교체 작업 진행",

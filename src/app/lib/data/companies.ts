@@ -1,6 +1,6 @@
 // src/app/lib/data/companies.ts
 
-export type CompanyKey = "nhn" | "vacorp" | "miracle-city" | "jeongmu" | "kga";
+export type CompanyKey = "nhn" | "vacorp" | "miracle-city" | "jeongmu" | "kga"| "jellyfish";
 
 export type Company = {
   key: CompanyKey;
@@ -45,13 +45,13 @@ export const companies: Company[] = [
     href: "/companies/vacorp",
   },
   {
-    key: "miracle-city",
-    name: "Miracle City × Jellyfish",
-    period: "2024.04-2025.03",
+    key: "jellyfish",
+    name: "Jellyfish Entertainment",
+    period: "2024.04-2024.08",
     roleLine: "총무 · 운영 지원",
     oneLiner: "현장 운영·행사·시설/비품 관리 등 운영 업무를 구조화해 재사용 가능한 흐름으로 정리",
     tags: ["현장 운영", "시설/비품", "행사", "협력사 커뮤니케이션"],
-    href: "/companies/miracle-city",
+    href: "/companies/jellyfish",
   },
   {
     key: "jeongmu",

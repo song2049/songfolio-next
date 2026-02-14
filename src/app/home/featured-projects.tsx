@@ -13,6 +13,15 @@ type Featured = {
 
 const FEATURED: Featured[] = [
   {
+    slug: "ops-support",
+    title: "운영지원 · 행사·시설 총무 프로젝트",
+    summary: "기업 운영 업무(행사·VIP 의전·구매·시설·제작)를 프로젝트 기반으로 수행",
+    outcome: "행사 운영부터 구매·시설 대응까지 운영 전반을 맡아, 현장 대응·조율·표준화 역량을 확장했습니다.",
+    tags: ["Event Ops", "VIP Protocol", "Purchasing", "Facilities", "Brand/Web"],
+    href: "/projects/ops-support",
+    logoSrc: "/projects/ops-support/cover.png",
+  },
+  {
     slug: "gas",
     title: "GAS (General Affair Asset System)",
     summary: "사내 자산·계정·라이선스 운영을 위한 관리 시스템",

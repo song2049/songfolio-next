@@ -25,9 +25,9 @@ function EvidenceCard({ title, points }: { title: string; points: string[] }) {
   );
 }
 
-export default function MiracleCityCompanyPage() {
-  const companyKey = "miracle-city";
-  const companyName = "Miracle City × Jellyfish";
+export default function JellyfishCompanyPage() {
+  const companyKey = "jellyfish";
+  const companyName = "Jellyfish Entertainment";
   const companyProjects = projects.filter((p: any) => p.company?.key === companyKey);
 
   const photos = getCompanyWorkPhotos(companyKey).slice(0, 10);
@@ -36,7 +36,7 @@ export default function MiracleCityCompanyPage() {
     <main>
       <Section
         title={companyName}
-        description="실무 경험을 기반으로 총무·시설·구매·IT 운영 업무를 하나의 흐름으로 통합 정리했습니다."
+        description="엔터테인먼트 조직 내 총무/운영 담당으로 자산·구매·시설·계약 업무를 체계화하며 운영 기반을 정리했습니다."
       >
         <Container>
           {/* 상단 요약 카드 (기존 템플릿 유지 목적: 핵심 내용만 넣어둠) */}
@@ -45,11 +45,11 @@ export default function MiracleCityCompanyPage() {
               <div>
                 <div className="text-sm font-semibold">Role</div>
                 <div className="mt-1 text-sm text-zinc-600">
-                  총무/운영 · (2024.04 – 2025.03)
+                  총무/운영 · (2024.04 – 2024.08)
                 </div>
                 {/* ✅ 리스크 방지: 법인/조직을 굳이 노출하지 않되, 형태는 명확히 */}
                 <div className="mt-1 text-xs text-zinc-500">
-                  그룹 운영 조직 내 상주하며 총무·시설·구매·IT 운영을 지원 및 전담
+                  총무/운영 담당으로 구매·시설·자산관리 업무 전담
                 </div>
               </div>
 
