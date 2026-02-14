@@ -93,11 +93,6 @@ export const projects: Project[] = [
       "프로젝트 경험도 운영 역량을 강화하는 중요한 기반이 된다",
     ],
   },
-
-  links: {
-    github: null,
-    live: null,
-  },
 },
 
   {
