@@ -57,7 +57,7 @@ export const projects: Project[] = [
   featured: true,
 
   // ❌ 회사 경력으로 묶지 않음 (프로젝트로만 처리)
-  company: null,
+  company: undefined,
 
   outcomeLine:
     "정식 재직 형태가 아닌 프로젝트 기반으로 기업 운영지원 업무를 수행하며, 총무 실무 전반(행사·구매·시설·커뮤니케이션)을 경험하고 운영 역량을 확장했습니다.",
