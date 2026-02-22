@@ -31,7 +31,7 @@ export function ProjectCard({
   return (
     <Link
       href={href}
-      className="group block overflow-hidden rounded-2xl border border-zinc-300 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+      className="group block overflow-hidden rounded-2xl surface transition hover:-translate-y-0.5 hover:shadow-md"
     >
       {/* cover */}
       <div className="relative h-40 w-full overflow-hidden border-b border-zinc-200 bg-zinc-50">
@@ -69,7 +69,7 @@ export function ProjectCard({
               ) : null}
 
               {role ? (
-                <span className="rounded-full border border-zinc-200 bg-white px-2 py-0.5 text-[11px] text-zinc-700">
+                <span className="rounded-full border border-zinc-200 bg-white/70 px-2 py-0.5 text-[11px] text-zinc-700 backdrop-blur">
                   {role}
                 </span>
               ) : null}
@@ -90,7 +90,7 @@ export function ProjectCard({
           {stack.slice(0, 6).map((t) => (
             <span
               key={t}
-              className="rounded-full border border-zinc-200 bg-white px-2 py-0.5 text-[11px] text-zinc-700"
+              className="rounded-full border border-zinc-200 bg-white/70 px-2 py-0.5 text-[11px] text-zinc-700 backdrop-blur"
             >
               {t}
             </span>

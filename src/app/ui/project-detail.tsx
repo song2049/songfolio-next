@@ -29,7 +29,7 @@ export type ProjectDetailProps = {
 
 function Pill({ children }: { children: React.ReactNode }) {
   return (
-    <span className="rounded-full border border-zinc-200 bg-white px-2 py-0.5 text-[11px] text-zinc-700">
+    <span className="rounded-full border border-zinc-200 bg-white/70 px-2 py-0.5 text-[11px] text-zinc-700 backdrop-blur">
       {children}
     </span>
   );
@@ -45,7 +45,7 @@ function Card({
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
+    <section className="surface rounded-2xl p-5">
       <h2 className="text-sm font-semibold text-zinc-900">{title}</h2>
       <ul className="mt-3 space-y-2 text-sm text-zinc-700">
         {items.map((x, i) => (
@@ -64,7 +64,7 @@ function LinkButton({ href, label }: { href: string; label: string }) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs text-zinc-700 hover:bg-zinc-50"
+      className="rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs text-zinc-700 backdrop-blur hover:bg-white"
     >
       {label} →
     </Link>
@@ -94,14 +94,14 @@ export function ProjectDetail({
                 {links.docs ? <LinkButton href={links.docs} label="Docs" /> : null}
               </div>
             ) : null}
-      <header className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+      <header className="surface rounded-3xl p-7 sm:p-8">
         
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div className="space-y-2">
             <h1 className="text-xl font-semibold tracking-tight">{title}</h1>
             <p className="text-sm leading-relaxed text-zinc-600">{summary}</p>
             {outcomeLine ? (
-              <div className="mt-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
+              <div className="mt-4 rounded-2xl border border-zinc-200 bg-white/60 p-4 backdrop-blur">
                 <div className="text-xs font-semibold text-zinc-900">Outcome</div>
                 <p className="mt-1 text-sm leading-relaxed text-zinc-700">{outcomeLine}</p>
               </div>
@@ -112,7 +112,7 @@ export function ProjectDetail({
                 {stats.map((s) => (
                   <span
                     key={`${s.label}-${s.value}`}
-                    className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs text-zinc-700"
+                    className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs text-zinc-700 backdrop-blur"
                   >
                     <span className="font-semibold text-zinc-900">{s.label}</span>
                     <span className="text-zinc-600">{s.value}</span>
@@ -152,7 +152,7 @@ export function ProjectDetail({
       </header>
 
       {/* Highlights */}
-      <section className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
+      <section className="surface rounded-2xl p-5">
         <h2 className="text-sm font-semibold text-zinc-900">Highlights</h2>
         <ul className="mt-3 space-y-2 text-sm text-zinc-700">
           {highlights.map((x, i) => (
@@ -175,14 +175,14 @@ export function ProjectDetail({
         <aside className="space-y-4">
           <Link
             href="/projects"
-            className="block rounded-2xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm hover:bg-zinc-50"
+            className="block surface rounded-2xl p-5 text-sm text-zinc-700 hover:bg-white"
           >
             ← Back to Projects
           </Link>      
         </aside>
       </div>
       {/* Related Experience */}
-      <section className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
+      <section className="surface rounded-2xl p-5">
         <h2 className="text-sm font-semibold text-zinc-900">Related Experience</h2>
         <p className="mt-2 text-sm leading-relaxed text-zinc-600">
           이 프로젝트는 실제 업무 경험과 학습 과정에서 정리한 문제를 바탕으로,

@@ -36,7 +36,7 @@ export default function JellyfishCompanyPage() {
     <main>
       <Section
         title={companyName}
-        description="엔터테인먼트 조직 내 총무/운영 담당으로 자산·구매·시설·계약 업무를 체계화하며 운영 기반을 정리했습니다."
+        description="총무 전담 담당자로 OA 자산 250대, 법인차량 13대, 임대차·시설·구매 운영을 총괄하며 비용 구조를 개선하고 운영 체계를 정비했습니다."
       >
         <Container>
           {/* 상단 요약 카드 (기존 템플릿 유지 목적: 핵심 내용만 넣어둠) */}
@@ -49,7 +49,7 @@ export default function JellyfishCompanyPage() {
                 </div>
                 {/* ✅ 리스크 방지: 법인/조직을 굳이 노출하지 않되, 형태는 명확히 */}
                 <div className="mt-1 text-xs text-zinc-500">
-                  총무/운영 담당으로 구매·시설·자산관리 업무 전담
+                  총무/운영 담당으로 구매·시설·자산관리·임대차·차량  업무 전담
                 </div>
               </div>
 
@@ -73,22 +73,26 @@ export default function JellyfishCompanyPage() {
               <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
                 <div className="text-sm font-semibold">What I did</div>
                 <ul className="mt-3 space-y-2">
-                  <Bullet>자산/장비 운영(재고, 지급·회수, 이력/현황 업데이트)</Bullet>
-                  <Bullet>소프트웨어 구독/갱신 관리(만료/결제/증빙)</Bullet>
-                  <Bullet>시설/안전 운영(점검, 협력사 대응, 출입/공용설비 관리)</Bullet>
-                  <Bullet>구매/계약 운영(비교견적, 발주, 납기·정산 관리)</Bullet>
-                  <Bullet>사내·외 행사 운영 지원(기획안 검토, 실행 조율)</Bullet>
-                  <Bullet>업무 표준화(요청 양식, 체크리스트, 운영 기준 정리)</Bullet>
-                  <Bullet>협업 부서/업체 커뮤니케이션(일정/비용/납기)</Bullet>
+                  <Bullet>구매·자산·시설·임대차·법인차량 운영 전반 총괄</Bullet>
+                  <Bullet>OA 자산 250대 관리 및 소프트웨어·전산 장비 구매/갱신</Bullet>
+                  <Bullet>공급업체 비교견적 및 단가 조정 (구매 수수료 30% → 15% 절감)</Bullet>
+                  <Bullet>법인차량 13대 계약·운행·정산 관리</Bullet>
+                  <Bullet>사옥·사택·숙소 임대차 계약 및 시설 유지보수</Bullet>
+                  <Bullet>소방·승강기 안전관리자 선임 및 정기 점검 수행</Bullet>
+                  <Bullet>법정의무교육 60인 운영 및 환급 구조 검토</Bullet>
+                  <Bullet>IT·OA 장애 대응 및 네트워크 이슈 해결</Bullet>
+                  <Bullet>사내·외 행사 1회 운영 지원</Bullet>
                 </ul>
               </div>
 
               <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
                 <div className="text-sm font-semibold">Why it matters</div>
                 <ul className="mt-3 space-y-2">
-                  <Bullet>운영 데이터가 쌓여야 “인수인계/지속 운영”이 가능</Bullet>
-                  <Bullet>반복 업무를 표준화해 담당자 의존도를 낮춤</Bullet>
-                  <Bullet>업무를 시스템으로 전환하기 위한 핵심 요구사항을 정의</Bullet>
+                  <Bullet>자산·계약·차량·시설을 하나의 관리 단위로 통합해 인수인계 가능한 구조로 전환</Bullet>
+                  <Bullet>비교견적·정산 기준을 명확히 해 비용 누수 구조 개선 (구매 수수료 30% → 15%)</Bullet>
+                  <Bullet>구매·시설·차량 이슈를 단일 창구로 정리해 커뮤니케이션/처리 리드타임 단축</Bullet>
+                  <Bullet>법정·안전 항목을 일정 기반 관리 체계로 운영해 리스크 최소화</Bullet>
+                  <Bullet>운영 데이터를 정리해 향후 시스템화(GAS 기획)의 기반 확보</Bullet>
                 </ul>
               </div>
             </div>
@@ -118,19 +122,19 @@ export default function JellyfishCompanyPage() {
             <div className="mb-3 text-sm font-semibold">Evidence</div>
             <div className="grid gap-4 md:grid-cols-4">
               <EvidenceCard
-                title="자산/장비 운영"
+                title="자산·구매 운영"
                 points={[
-                  "재고/현황 업데이트(사용자/부서 기준 관리)",
-                  "지급·회수 및 이관 흐름 지원",
-                  "자산 실사/상태 점검 및 정리",
+                  "OA 자산 250대 관리 (지급/회수/이력/현황)",
+                  "공급업체 비교견적 및 단가 조정",
+                  "구매 수수료 30% → 15% 절감",
                 ]}
               />
               <EvidenceCard
                 title="구독/갱신 관리"
                 points={[
-                  "만료/갱신 일정 체크 및 누락 방지",
-                  "결제/증빙 서류 정리",
-                  "사용 현황 기반 좌석/계정 운영 지원",
+                  "소프트웨어 만료/갱신 일정 관리 및 누락 방지",
+                  "결제/증빙/정산 서류 정리",
+                  "사용 현황 기반 갱신/좌석 최적화 지원",
                 ]}
               />
               <EvidenceCard
@@ -142,11 +146,11 @@ export default function JellyfishCompanyPage() {
                 ]}
               />
               <EvidenceCard
-                title="총무·시설·구매 운영"
+                title="시설·임대차·법인차량"
                 points={[
-                  "법인차량/렌탈 계약 운영 및 정산",
-                  "시설 점검·AS 접수 및 협력사 커뮤니케이션",
-                  "비교견적 기반 발주/납기/정산 프로세스 운영",
+                  "법인차량 13대 계약·정산 운영",
+                  "사옥·사택·숙소 임대차 계약 관리",
+                  "소방·승강기 안전관리자 선임 및 점검 수행",
                 ]}
               />
             </div>

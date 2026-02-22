@@ -9,7 +9,7 @@ function LinkBadge({ href, children }: { href: string; children: React.ReactNode
   return (
     <Link
       href={href}
-      className="inline-flex rounded-full border border-zinc-200 bg-white px-2 py-0.5 text-[11px] text-zinc-700 hover:bg-zinc-50"
+      className="inline-flex rounded-full border border-zinc-200 bg-white/70 px-2 py-0.5 text-[11px] text-zinc-700 backdrop-blur hover:bg-white"
     >
       {children}
     </Link>
@@ -17,7 +17,7 @@ function LinkBadge({ href, children }: { href: string; children: React.ReactNode
 }
 function Badge({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex rounded-full border border-zinc-200 bg-white px-2 py-0.5 text-[11px] text-zinc-700">
+    <span className="inline-flex rounded-full border border-zinc-200 bg-white/70 px-2 py-0.5 text-[11px] text-zinc-700 backdrop-blur">
       {children}
     </span>
   );

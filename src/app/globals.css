@@ -1,15 +1,51 @@
 @import "tailwindcss";
 
-:root { color-scheme: light; }
+:root {
+  color-scheme: light;
+}
 
 html, body { height: 100%; }
 
 body {
-  background: white;
+  /* 기본 배경을 '완전 흰색'에서 은은한 그라데이션으로 변경 */
+  background:
+    radial-gradient(900px 520px at 12% -10%, rgba(0, 0, 0, 0.08), transparent 60%),
+    radial-gradient(760px 520px at 95% 0%, rgba(0, 0, 0, 0.06), transparent 55%),
+    linear-gradient(#fafafa, #f4f4f5);
   color: rgb(24 24 27); /* zinc-900 */
 }
 
 a { text-underline-offset: 4px; }
+
+/* --- Sub pages background helpers --- */
+@layer utilities {
+  .app-shell {
+    position: relative;
+    min-height: 100%;
+    isolation: isolate;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(24, 24, 27, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(24, 24, 27, 0.08) 1px, transparent 1px);
+    background-size: 64px 64px;
+    opacity: 0.18;
+    /* 상단에서 더 보이고 아래로 갈수록 자연스럽게 사라지게 */
+    -webkit-mask-image: radial-gradient(circle at 50% 0%, black 0%, transparent 70%);
+    mask-image: radial-gradient(circle at 50% 0%, black 0%, transparent 70%);
+  }
+
+  /* 카드/필터 등에서 쓰는 유리 느낌의 표면 */
+  .surface {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(24, 24, 27, 0.12);
+    backdrop-filter: blur(10px);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.7) inset,
+      0 10px 24px rgba(0, 0, 0, 0.06);
+  }
+}
 
 /* --- Intro Starfield (lightweight) --- */
 .starfield {

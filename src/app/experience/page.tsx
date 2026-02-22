@@ -127,7 +127,7 @@ function List({ items }: { items: string[] }) {
 
 export default function ExperiencePage() {
   return (
-    <main className="bg-white">
+    <main>
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <SectionTitle
           title="Experience"
@@ -135,7 +135,7 @@ export default function ExperiencePage() {
         />
 
         {/* Summary header */}
-        <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div className="surface rounded-3xl p-7 sm:p-8">
           <div className="text-sm font-semibold text-zinc-900">
             한 줄 요약
           </div>
@@ -155,13 +155,13 @@ export default function ExperiencePage() {
           <div className="mt-5 flex flex-wrap gap-3">
             <Link
               href="/projects?mode=featured"
-              className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-900 hover:bg-zinc-50"
+              className="rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm text-zinc-900 backdrop-blur hover:bg-white"
             >
               프로젝트 보기
             </Link>
             <Link
               href="/#proof"
-              className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-900 hover:bg-zinc-50"
+              className="rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm text-zinc-900 backdrop-blur hover:bg-white"
             >
               메인 보기
             </Link>
@@ -171,7 +171,7 @@ export default function ExperiencePage() {
         {/* Company cases */}
         <div className="mt-10 space-y-6">
           {CASES.map((c) => (
-            <section key={c.company} className="rounded-2xl border border-zinc-200 bg-white shadow-sm">
+            <section key={c.company} className="surface rounded-3xl">
               <div className="border-b border-zinc-200 px-6 py-5">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
@@ -219,7 +219,7 @@ export default function ExperiencePage() {
         </div>
 
         {/* Closing */}
-        <div className="mt-10 rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div className="mt-10 surface rounded-3xl p-7 sm:p-8">
           <div className="text-sm font-semibold text-zinc-900">How I Work</div>
           <ul className="mt-3 space-y-2 text-sm leading-relaxed text-zinc-700">
             <li>• 운영은 감각이 아니라 구조로 관리되어야 합니다.</li>

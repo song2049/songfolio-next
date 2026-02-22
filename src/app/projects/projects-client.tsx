@@ -16,7 +16,7 @@ function pillClass(active: boolean) {
     "rounded-full border px-4 py-2 text-sm transition",
     active
       ? "border-zinc-900 bg-zinc-900 text-white"
-      : "border-zinc-200 bg-white hover:bg-zinc-50",
+      : "border-zinc-200 bg-white/70 backdrop-blur hover:bg-white",
   ].join(" ");
 }
 
@@ -25,7 +25,7 @@ function chipClass(active: boolean) {
     "rounded-full border px-3 py-1 text-xs transition",
     active
       ? "border-zinc-900 bg-zinc-900 text-white"
-      : "border-zinc-200 bg-white hover:bg-zinc-50",
+      : "border-zinc-200 bg-white/70 backdrop-blur hover:bg-white",
   ].join(" ");
 }
 
@@ -108,7 +108,7 @@ export default function ProjectsClient() {
               {company ? (
                 <button
                   type="button"
-                  className="ml-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm hover:bg-zinc-50"
+                  className="ml-2 rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm backdrop-blur hover:bg-white"
                   onClick={() => setQuery({ company: "" })}
                   title="회사 필터 해제"
                 >
@@ -184,7 +184,7 @@ export default function ProjectsClient() {
             ))}
 
             {filtered.length === 0 ? (
-              <div className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-600">
+              <div className="surface rounded-3xl p-6 text-sm text-zinc-600">
                 조건에 맞는 프로젝트가 없습니다. (필터를 해제해보세요)
               </div>
             ) : null}
@@ -194,7 +194,7 @@ export default function ProjectsClient() {
           <div className="mt-10 flex flex-wrap gap-2">
             <Link
               href="/"
-              className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm hover:bg-zinc-50"
+              className="rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm backdrop-blur hover:bg-white"
             >
               Home →
             </Link>

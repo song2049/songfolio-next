@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "./ui/header";
 import { Footer } from "./ui/footer";
+import { BackgroundDecor } from "./ui/background-decor";
 
 export const metadata: Metadata = {
   title: "Songfolio",
@@ -18,10 +19,13 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="min-h-screen">
-        <Header />
-        {children}
-        {modal}
-        <Footer />
+        <div className="app-shell">
+          <BackgroundDecor />
+          <Header />
+          {children}
+          {modal}
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -2,7 +2,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-zinc-200">
+    <footer className="border-t border-zinc-200 bg-white/40 backdrop-blur">
       <div className="mx-auto w-full max-w-5xl px-5 py-10">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-1">
@@ -12,7 +12,7 @@ export function Footer() {
           <div className="flex flex-wrap gap-2">
             <a
               href="https://blog.naver.com/song912049"
-              className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm hover:bg-zinc-50"
+              className="rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm backdrop-blur hover:bg-white"
             >
               Blog
             </a>
@@ -20,7 +20,7 @@ export function Footer() {
               href="https://github.com/song2049"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm hover:bg-zinc-50"
+              className="rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm backdrop-blur hover:bg-white"
             >
               GitHub
             </a>

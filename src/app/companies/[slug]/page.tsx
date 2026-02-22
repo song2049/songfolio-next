@@ -18,8 +18,9 @@ export default async function CompanyPage({
     const companyPhotos = workPhotos.filter((p) => p.companyKey === company.key);
 
     return (
-        <main className="min-h-screen bg-white">
-            <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+        <main>
+            <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+              <div className="surface rounded-3xl p-7 sm:p-10">
                 {/* 뒤로가기 */}
                 <Link
                     href="/companies"
@@ -86,7 +87,7 @@ export default async function CompanyPage({
                 )}
 
                 {/* 홈 링크 */}
-                <div className="py-8">
+                <div className="pt-8">
                     <Link
                         href="/"
                         className="inline-flex rounded-lg border border-zinc-200 px-6 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50 transition"
@@ -94,6 +95,7 @@ export default async function CompanyPage({
                         홈으로 돌아가기
                     </Link>
                 </div>
+              </div>
             </div>
         </main>
     );

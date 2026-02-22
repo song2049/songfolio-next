@@ -7,7 +7,7 @@ import { companies } from "../lib/data/companies";
 
 function Tag({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex rounded-full border border-zinc-200 bg-white px-2 py-0.5 text-[11px] text-zinc-700">
+    <span className="inline-flex rounded-full border border-zinc-200 bg-white/70 px-2 py-0.5 text-[11px] text-zinc-700 backdrop-blur">
       {children}
     </span>
   );
@@ -23,7 +23,7 @@ export default function CompaniesPage() {
               <Link
                 key={c.key}
                 href={c.href}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm hover:bg-zinc-50"
+                className="surface rounded-3xl p-6 transition hover:-translate-y-0.5 hover:shadow-md"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
@@ -49,13 +49,13 @@ export default function CompaniesPage() {
           <div className="mt-10 flex flex-wrap gap-2">
             <Link
               href="/projects"
-              className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm hover:bg-zinc-50"
+              className="rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm backdrop-blur hover:bg-white"
             >
               Projects로 →
             </Link>
             <Link
               href="/experience"
-              className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm hover:bg-zinc-50"
+              className="rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm backdrop-blur hover:bg-white"
             >
               Experience로 →
             </Link>
