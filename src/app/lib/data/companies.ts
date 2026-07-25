@@ -28,7 +28,7 @@ export type Company = {
 export const companies: Company[] = [
   {
     key: "nhn",
-    name: "NHN (Naver / NHN 계열)",
+    name: "네이버그린팩토리(아데코코리아)",
     period: "2014.08–2017.01",
     roleLine: "IT 총무 · 전산 운영",
     oneLiner: "대규모 조직 환경에서 표준 IT 운영·자산 관리 기본기를 체계적으로 구축",

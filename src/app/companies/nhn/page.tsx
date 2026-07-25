@@ -33,7 +33,7 @@ function EvidenceCard({
 
 export default function NHNCompanyPage() {
   const companyKey = "nhn";
-  const companyName = "NHN (naver / NHN 계열)";
+  const companyName = "네이버그린팩토리(아데코코리아)";
   const companyProjects = projects.filter((p: any) => p.company?.key === companyKey);
 
   // 사진 1장이어도 WorkCarousel은 동작함(센터만 보여줌)

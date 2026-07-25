@@ -34,7 +34,7 @@ const CAREERS: CareerCard[] = [
     href: "/companies/jeongmu",
   },
   {
-    company: "NHN / NAVER I&S",
+    company: "네이버그린팩토리(아데코코리아)",
     period: "2014.08 – 2017.01",
     role: "IT Support",
     outcome:

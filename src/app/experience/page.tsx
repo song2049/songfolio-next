@@ -79,7 +79,7 @@ const CASES: CompanyCase[] = [
     ],
   },
   {
-    company: "NHN / NAVER I&S",
+    company: "네이버그린팩토리(아데코코리아)",
     period: "2014.08 – 2017.01",
     role: "IT Support / 전산 운영",
     outcome: "대규모 조직의 IT 운영 기초 체계 경험",

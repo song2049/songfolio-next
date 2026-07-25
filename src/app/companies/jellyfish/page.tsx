@@ -177,7 +177,7 @@ export default function JellyfishCompanyPage() {
               </div>
             ) : (
               <div className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-600">
-                현재는 회사-프로젝트 매칭을 반영하지 않았습니다. (추후 연결 예정)
+         
               </div>
             )}
           </div>

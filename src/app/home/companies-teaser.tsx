@@ -40,7 +40,7 @@ const companies: Company[] = [
   },
   {
     key: "nhn",
-    name: "NHN / NAVER",
+    name: "네이버그린팩토리(아데코코리아)",
     period: "2014–2017",
     role: "IT 총무 · 전산 운영",
     oneLiner: "대규모 조직 환경에서 IT 자산·계정·장비 운영의 기본 체계를 경험",
